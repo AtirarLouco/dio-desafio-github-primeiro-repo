@@ -22,7 +22,7 @@ Frases que costumo dizer em longas jornadas:
  
 ***"Não é necessário motivação, estimulos e vontade, você só deve fazer o que deve fazer".***
 
-***"O meu desenvolvimento pessoal/profissional forja minha armadura, com minha armadura sou mais atraente, mais inteligente, mais forte e mais bonito. Logo sei que sou um homem bem sucedido e sei que minha armadura já faz parte de mim.***
+***"O meu desenvolvimento pessoal/profissional forja minha armadura, com minha armadura sou mais atraente, mais inteligente, mais forte e mais bonito. Logo sei que sou um homem bem sucedido e sei que minha armadura já faz parte de mim."***
 
 
 # Meus dispositivos:
@@ -31,9 +31,11 @@ Frases que costumo dizer em longas jornadas:
 ***Nokia 5.3 >*** Processador Snapdragon 665 Qualcomm SDM665, 4 GB RAM, Android 11
 
 ## Sistemas:
-***SO >*** Linux Ubuntu Mate e Windows 10
+***SO >*** Linux Ubuntu Mate, Windows 10
 
-***IDE >*** Visual Studio Code e Netbeans
+***IDE >*** Visual Studio Code, Netbeans
+
+***Editor de texto >*** Vim, nano
 
  
 
