@@ -2,28 +2,61 @@
 <html>
    <head>
      <meta charset="utf-8"> <!--Formatação do texto em UTF-8 -->
-     <title>Lucas Duarte</title>
-     
+     <link rel="stylesheet" href="css.css"> <!--Aqui efetua a conexão entre o arquivo css e html. "rel="stylesheet" define o tipo de arquivo de estilização e o "href=css.css" define o caminho do arquivo a ser lido. -->  
+   <title>Lucas Duarte</title>
+	<img src="imagens/html-css-e-js-definicoes.png"></img>
+	
+  <br></br>   
 </head>
    <body>
-	  Somente um html simples, contendo configuração básica da formatação da página,
-contendo meu nome no título da aba e este simples conteúdo no body.
+	  <p>Somente um html simples, contendo configuração básica da formatação da página,
+contendo meu nome no título da aba e este simples conteúdo no body.</p>
         <header>
-  	   <h1> Um título qualquer</h1>
+  	   <h1 id="umid"> Um titulo qualquer</h1><!--Com o "id", cria-se um objeto que permite instancia-lo no css e criar estilo do mesmo modo que o class, com a diferença que é um único objeto e não um conjunto de objetos. -->
 </header>
    <section>
      <header>
-	<h2>Posts</h2>
-</header>
+	<h2>Posts:</h2>
+
+</header></section>
 	<article>
+	<section>
 	<header>
-	<h3>Post #1</h3>
-	</header>
+	<h3 class="umaclasse">Post #1 - Pyro</h3><!--Com o "class=", cria-se uma classe que permite herdar os mesmos atributos para outros elementos que tiverem o mesmo nome da classe. -->
+<br> <img src= "imagens/Pyro.png" alt= "@@Foto do Pyro@@"></img> 
+</br>
+<br><p>"Hmm, hmm. Hmmmmmmm".</p></br>
+	</header></section>
+
+	<section>
+	<header>
+	<h3>Post #2 - Soldier</h3>
+	<br> <img src= "imagens/Soldier1.png" alt="@@Foto de Soldier@@"></img></br>
+	<br><p>"DEUS ABENÇOE A AMÉRICA!".</p></br>
+	</header> </section>
+	
+	<section>
+	<header>
+	<h3>Post #3 - Engineer</h3>
+	<br> <img src="imagens/Engineer1.png" alt="@@Foto do Engineer@@"></img></br>
+	<br><p>"Use uma arma, e se não funcionar, use mais armas!".</p></br>
+	</header></section>
+	
+	<section>
+	<header>
+	<h3>Post #4 - Medic</h3>
+	<br><img src="imagens/Medic1.jpeg"></img></br>
+	<br><p> "A cura não é tão gratificante quanto a dor."</p></br>
+	</header></section>
 </article>
-</section>
+
 <footer>
-Meu RepoGit: 
-<a href="https://github.com/AtirarLouco/dio-desafio-github-primeiro-repo.git" target="_blank">https://github.com/AtirarLouco/dio-desafio-github-primeiro-repo.git</a> 
+
+<p>Rede de Contatos:</p> 
+<ul> <!-- também funciona com <ol>, trocando os pontos por números em ordem numérica -->
+Meu RepoGit: <li><!--<li> é o item da lista --><a href="https://github.com/AtirarLouco/dio-desafio-github-primeiro-repo.git" target="_blank">https://github.com/AtirarLouco/dio-desafio-github-primeiro-repo.git</a></li>
+ 
+<br>Meu Email: <li><a href="mailto:lucasd.araujo@hotmail.com">lucasd.araujo@hotmail.com</a></br></li> 
 </footer>
 </body>
 </html>

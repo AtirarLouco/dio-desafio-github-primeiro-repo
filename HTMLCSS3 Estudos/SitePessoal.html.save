@@ -1,0 +1,22 @@
+<!DODCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8"> <! --Formatação do texto em UTF-8 -->
+     <title>Lucas Duarte</title>
+     
+</head>
+<body>
+Somente um html simples, contendo configuração básica da formatação da página,
+contendo meu nome no título da aba e este simples conteúdo no body.
+  <header>
+   <h1>Um título qualquer</h1>
+</header>	
+<section>
+<header>
+</header>
+<article>
+<
+</section>
+</body>
+</html>
+
