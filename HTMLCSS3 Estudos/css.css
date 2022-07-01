@@ -4,7 +4,7 @@
   padding-bottom: 5px;
   padding-left: 0;
   background-color: red;
-  background-size: auto;
+  width:250px;
   
   
   color: orange;/*Nesta linha é a lista de atributos*/
@@ -15,12 +15,22 @@ color: #8C521E;/*Linha de atributos*/
 
 }
 #cabecalhoprincipal{
- padding: 25px;
+ width-max:20px;
+ width: auto;
+ margin-left:150px;
+ margin-right:150px;
+ padding-left: 50px;
+ padding-right: 50px;
+ padding-top: 50px;
+ padding-bottom:50px;
  background-color: grey;
  border: 3px solid blue;
+ text-align:justify;
 }
 
 #cabecalhobody{
+width-max:700px;
+width:auto;
 padding-left:5px;
 padding-top: 10px;
 padding-right:5px;
@@ -28,4 +38,28 @@ padding-bottom:10px;
 margin:50px;
 border: 3px solid #FF7100;
 border-radius:3px; /*Arredondamento de bordas, também pode utilizar unidade de medida "%".*/
+background-color: black;
+color:white;
+}
+
+#footerprincipal{
+width-max:105px;
+width:auto;
+height-max: 135px;
+height:auto;
+margin-top :50px;
+margin-bootom:50px;
+margin-left:150px;
+margin-right:150px;
+padding-top: 0;
+text-align:center;
+background-color: #F7B400;
+
+}
+#corpo{
+background-image: url(imagens/tijolo.jpg);
+}
+#imagem{
+padding-left:200px;
+padding-right:200px;
 }
