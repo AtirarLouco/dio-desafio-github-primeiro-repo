@@ -1,3 +1,6 @@
+/*Este é o método EXTERNO de programação css, tradicionalmente usado. Vantagem de 
+usalo se dá pelo fato que o arquivo css é carregado separadamente.*/
+
 .umaclasse /*Nesta linha é feito o instanciamento das classes e objetos. Sendo ".umaclasse" uma classe e "#*/{ 
   padding-top: 7px;
   padding-right: 10px;

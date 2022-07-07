@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>Fundamentos Flexbox</title> 
+
+<style type="text/css">  /*--Este é o método "INTERNO" para programar css, em que você abre a tag style e define os atributos, podendo programar dentro do próprio arquivo HTML-->
+<!--Também é possível programar css com o método "Inline, em que é necessário definir o atributo <style...> dentro da tag HTML. Exemplo:
+<body style="background-color:black;"></body>-->*/
+
+/*<!--FLEX CONTAINER-->*/
+.flex{ 
+ margin-left:10cm;
+ max-width: 300px;
+ padding: 10px;
+ border: 2px solid black;
+ display: flex; /*Nesta classe, define um container com a propriedade "display:flex;". Esta propriedade tem o poder de auto-ajustar o tamanho dos elementos listados respeitando os limites dos itens e container, para tudo é necessário programa-lo.*/
+}
+.item{
+ background-color: purple;
+ margin: 5px;
+}
+
+ 
+</style>
+
+</head>
+
+<body> 
+<div class="flex"> <!--Puxando a classe flex para o elemento div-->
+<div class="item">Escort XR3 1993</div> 
+<div class="item">Nissan Pathfinder 1995</div>
+<div class="item">Chevrolet Blazer 1999</div>
+
+</div>
+</body>
+
+</html>

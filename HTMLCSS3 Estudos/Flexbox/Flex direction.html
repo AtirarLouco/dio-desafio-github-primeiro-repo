@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"></meta>
+    <title> Flex direction</title>
+    
+    <style type="text/css">
+    .flex-container{
+    margin:0;
+    padding:0;
+    display: flex;
+    list-style:none; /*Define nenhum estilo a lista*/
+    
+    }
+    
+    .flex-item{ /*Classe dos itens das listas ul*/
+    background: purple;
+    height: 50px;
+    width: 50px; 
+    font-size:20px;
+    color:yellow;
+    line-height:50px; /*Altura da linha*/
+    text-align: center;
+    margin: 5px; /* Aqui separa os elementos itens entre si mesmo, fica visualmente bonito.*/
+    
+    }
+    .row { /*Criando propriedade "flex-direction:row;" para qualquer elemento, em que row ordena a orientação dos itens. */
+    flex-direction: row;
+    
+    }
+    .row-reverse{ /*É a mesma coisa que o o row, só que define a direção OPOSTA*/
+    flex-direction: row-reverse;
+
+    
+    }
+    
+    .row-reverse li{ /*row reverse dedicado para itens <li> que utiliza a classe "row-reverse". Aqui é um complemento da classe ".row-reverse".*/
+     background-color:red;
+    }
+    
+    .column { /*Aqui modifica a direção da lista para o eixo VERTICAL, sendo possível listar os itens por linha, pois cria-se uma coluna.*/
+    float:left;
+    flex-direction: column;   
+    
+}
+
+.column li{ /*Mais um complemento da classe ".column" dedicado para itens <li> que utiliza a classe ".column"*/
+    color: grey;
+    background: black;
+}
+
+.column-reverse { /*Lista com formato de coluna, porém com ordenação reversa. */
+    float:right;
+    flex-direction:column-reverse;
+    
+} 
+.column-reverse li { /*Mais um complemento para a classe "column-reverse", em que afeta os itens <li> que utilizam a classe "column-reverse". */
+    background:pink;
+    color:green;
+}
+
+    </style>
+    
+</head>
+<body>
+    <ul class="flex-container row"> <!--Criando uma lista desordenada com as classes css "flex-container" e "row".
+Como pode ver, é possível instanciar duas classes, separando por espaços. -->
+    <li class= "flex-item">1</li>
+    <li class= "flex-item">2</li>
+    <li class= "flex-item">3</li>
+    <li class= "flex-item">4</li>
+    <li class= "flex-item">5</li>
+    
+    
+    </ul>
+
+    <ul class="flex-container row-reverse"> <!--Outra lista com propriedade "row-reverse" que muda a orientação horizontal para o lado oposto.-->
+    <li class= "flex-item">1</li>
+    <li class= "flex-item">2</li>
+    <li class= "flex-item">3</li>
+    <li class= "flex-item">4</li>
+    <li class= "flex-item">5</li>
+    
+    
+    </ul>
+    
+        <ul class="flex-container column"> <!--Outra lista com propriedade "flex-direction:column", em que define a lista em formato vertical.-->
+    <li class= "flex-item">1</li>
+    <li class= "flex-item">2</li>
+    <li class= "flex-item">3</li>
+    <li class= "flex-item">4</li>
+    <li class= "flex-item">5</li>
+    
+    </ul>
+    
+           <ul class="flex-container column-reverse"> <!--Outra lista, com a propriedade "flex-direction:column-reverse", em que define a lista em formato vertical e ordenação reversa.-->
+    <li class= "flex-item">1</li>
+    <li class= "flex-item">2</li>
+    <li class= "flex-item">3</li>
+    <li class= "flex-item">4</li>
+    <li class= "flex-item">5</li>
+    
+    </ul>
+    
+
+
+</body>
+</html>
