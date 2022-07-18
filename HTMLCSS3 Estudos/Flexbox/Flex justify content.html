@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chartset="UTF-8">
+  <!--LUCAS,PARE DE ESQUECER O BENDITO <TITLE> DE TODO HTML!!!!!!!!!!!!!! -->  
+    <title>JUSTIFY CONTENT</title>
+  <style type="text/css">
+    .flex-container{
+    display:flex;
+    max-width: 400px;
+    height:400px;
+    border: 2px solid green;
+    margin:10px;
+}
+    .item{
+    background-color: purple;
+    margin:5px;
+    text-align: center;
+    color:white;
+    
+}
+    .flex-start{/*Alinha os elementos para o ínicio do container <-- */
+    justify-content:flex-start; 
+    }
+    .flex-end{ /*Alinha os elementos para o final do container --> */
+    justify-content:flex-end;
+    }
+    .flex-center{ /*Alinhas os elementos para o centro do container >--<*/
+    justify-content: center;
+}
+    .flex-space-between{ /*Distribui espaçamento por igual entre para os elementos.*/
+    justify-content: space-between;    
+}
+    .flex-space-around{/*Distribui espaçamento igualmente o between, com a diferença que espaça para o inicio e final*/
+    justify-content:space-around;
+}
+    .flex-column{ /*Flex-start com column, os itens ocuparão todo espaçamento em linhas vertificais.*/
+    flex-direction: column; 
+ 
+    }
+    </style>
+
+</head>
+<body>
+        <h1>FLEX-STARTER  <--</h1>
+    <section class="flex-container flex-start">
+
+    <div class="item">intem</div>
+    <div class="item">untem</div>
+    <div class="item">meti</div>
+    <div class="item">tnim</div>
+</section>
+            <h1>FLEX-END  --></h1>
+    <section class="flex-container flex-end">
+
+    <div class="item">intem</div>
+    <div class="item">untem</div>
+    <div class="item">meti</div>
+    <div class="item">tnim</div>
+</section>
+            <h1>FLEX-CENTER  >--<</h1>
+    <section class="flex-container flex-center">
+
+    <div class="item">intem</div>
+    <div class="item">untem</div>
+    <div class="item">meti</div>
+    <div class="item">tnim</div>
+</section>
+            <h1>FLEX-SPACE-BETWEEN</h1>
+    <section class="flex-container flex-space-between">
+
+    <div class="item">intem</div>
+    <div class="item">untem</div>
+    <div class="item">meti</div>
+    <div class="item">tnim</div>
+</section>
+            <h1>FLEX-SPACE-AROUND</h1>
+    <section class="flex-container flex-space-around">
+
+    <div class="item">intem</div>
+    <div class="item">untem</div>
+    <div class="item">meti</div>
+    <div class="item">tnim</div>
+    </section>
+                <h1>FLEX-START com FLEX-DIRECTION:COLUMN</h1>
+    <section class="flex-container flex-start flex-column">
+
+    <div class="item">intem</div>
+    <div class="item">untem</div>
+    <div class="item">meti</div>
+    <div class="item">tnim</div>
+    </section>
+                <h1>FLEX-CENTER com FLEX-DIRECTION:COLUMN</h1>
+    <section class="flex-container flex-center flex-column">
+
+    <div class="item">intem</div>
+    <div class="item">untem</div>
+    <div class="item">meti</div>
+    <div class="item">tnim</div>
+    </section>
+</body>
+
+</html>

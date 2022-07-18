@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ALIGN-ITEMS</title>
+<style type="text/css">
+    .flex-container{
+    display:flex;
+    max-width: 400px;
+    border: 8px solid pink;
+    margin:10px;
+
+  
+}
+    .flex-item{
+    background-color: purple;
+    margin:5px;
+    text-align: center;
+    color:white;
+
+    flex: 1; /*Posiciona os itens conforme o valor definido, respeitando o espaço disponível do container*/
+}
+
+    .flex{ /*Posiciona os itens conforme o valor definido, respeitando o espaço disponível do container*/
+    flex: 1;
+}
+    .center{
+    align-items: center; /*Alinha os itens para o CENTRO do container*/
+
+}
+    .stretch{
+    align-items: stretch;
+}
+    .start{
+    align-items: flex-start;
+}
+    .end{
+    align-items: flex-end;
+}
+    .baseline{
+    align-items: baseline;
+}
+    .column{
+    flex-direction: column;
+
+}
+
+</style>
+
+</head>
+<body>
+    <h1>ALIGN-ITEM EM CENTER, com propriedade FLEX: 1;</h1>
+<section class="flex-container center">
+        <div class="flex-item">Nokia 5.3 128Gb preto</div> <!--Como visto, a propriedade " flex: 1; " e o " align-item: center; " faz com que o item aumente sua altura quando há quebra de linha e também mantém todo texto do item CENTRALIZADO. Do mesmo modo o container que tem a propriedade " flex: 1; " , ele aumenta a altura conforme o tamanho do item vai crescendo. --> 
+        <div class="flex-item">Motorola</div>
+        <div class="flex-item">Bad Samsung </div>
+        <div class="flex-item">iPhone</div>
+</section>
+
+    <h1>ALIGN-ITEM EM STRECH, com propriedade FLEX: 1;</h1>
+<section class="flex-container stretch">
+        <div class="flex-item">Sk8 Street a a a a a a a a a </div> <!--O stretch funciona como o famoso "maria vai com as outras", se existe um item maior que todos por causa do conteúdo, logo todos os itens aderem o mesmo tamanho do maior de todos. --> 
+        <div class="flex-item">Sprite</div>
+        <div class="flex-item">Baguete</div>
+        <div class="flex-item">Boot</div>
+</section>
+
+  <h1>ALIGN-ITEM EM START, com propriedade FLEX: 1;</h1>
+<section class="flex-container start">
+        <div class="flex-item">SPY</div> <!--Realizará o alinhamento do item ao ínicio(de cima pra baixo) do container. --> 
+        <div class="flex-item">MEDIC  kritzkreger</div>
+        <div class="flex-item">PYRO GAMING</div>
+        <div class="flex-item">ENGINEER GAMING wrench</div>
+</section>
+    
+  <h1>ALIGN-ITEM EM END, com propriedade FLEX: 1;</h1>
+<section class="flex-container end">
+        <div class="flex-item">SPY</div> <!--Realizará o alinhamento do item ao FIM (de baixo pra cima) do container. --> 
+        <div class="flex-item">MEDIC kritzkreger</div>
+        <div class="flex-item">PYRO GAMING</div>
+        <div class="flex-item">ENGINEER GAMING wrench</div>
+</section>
+
+  <h1>ALIGN-ITEM EM BASELINE, com propriedade FLEX: 1;</h1>
+<section class="flex-container baseline">
+        <div class="flex-item">SPY 1</div> <!--Não entendi muito bem, segundo a professora, o baseline respeita o valor padrão da linha de orientação, o baseline respeita as dimensões da fonte utilizada, todos os itens seguem esse valor padrão. --> 
+        <div class="flex-item">MEDIC kritzkreger</div>
+        <div class="flex-item">PYRO GAMING</div>
+        <div class="flex-item">ENGINEER GAMING wrench</div>
+</section>
+
+  <h1>ALIGN-ITEM EM START, com propriedade "FLEX: 1;" e flex-d...Column; </h1>
+<section class="flex-container start column">
+        <div class="flex-item">SPY 1</div> <!--Trabalhando com "flex-start" e " flex-direction: column; , como resultado trouxe uma lista em formato de colunas. "--></div>
+        <div class="flex-item">PYRO GAMING</div>
+        <div class="flex-item">ENGINEER GAMING wrench</div>
+</section>
+
+</body>
+
+</html>

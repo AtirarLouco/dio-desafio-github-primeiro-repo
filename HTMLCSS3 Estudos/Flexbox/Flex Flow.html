@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>FLEX FLOW</title>
+
+<style type="text/css">
+.flex-container{
+    display:flex;
+    height: 200px;
+    max-width: 500px;
+    margin-bottom: 10px;
+    border: 3px solid grey;
+    line-height:50px;
+}
+
+.flex-flow{
+    flex-flow: row nowrap; /*Valores padrões do flex-flow*/
+}
+.item{
+    background:orange;
+    margin:5px;
+    color:purple;
+    text-align:center;
+    width:100px;
+    height:50px;
+    line-height:50px;
+    
+}
+
+.wrap{ /*Utilizando Flex-Flow com a propriedade WRAP*/
+    flex-flow:row wrap;
+    
+    
+}
+.wraprow{ /*Utilizando flex com propriedades reversas.*/
+    flex-flow:row-reverse wrap-reverse;
+}
+
+</style>
+
+</head>
+<body>
+    <h1>Flex-flow com padrão: row e nowrap</h1>
+    <div class="flex-container flex-flow">
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+    <div class="item">Item3</div>
+    <div class="item">Item4</div>
+    <div class="item">Item5</div>
+    
+    </div>
+     
+    <h1>Flex-flow com row e wrap</h1>
+    <div class="flex-container wrap"> <!--Container com a propriedade flex wrap definida utilizando flex-flow.-->
+     
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+    <div class="item">Item3</div>
+    <div class="item">Item4</div>
+    <div class="item">Item5</div>
+    
+    </div>
+    
+    <h1>Flex-flow com row e wrap reversos</h1>
+    <div class="flex-container wraprow"> <!--Container com flex-row com propriedades reversas. -->
+     
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+    <div class="item">Item3</div>
+    <div class="item">Item4</div>
+    <div class="item">Item5</div>
+    
+    </div>
+</body>
+
+</html>

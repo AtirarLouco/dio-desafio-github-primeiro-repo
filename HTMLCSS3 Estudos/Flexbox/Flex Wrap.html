@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Flex Wrap</title>
+<style type="text/css">
+    .flex-container{
+    display:flex;
+    height: 150px;
+    max-width: 300px;
+    margin: 50px;
+    border: 3px solid grey;
+} 
+
+    .item{
+    font-size:24px;
+    height: 50%;
+    min-width: 100px; /*"min" define o valor mínimo de algo.*/
+    text-align: center;
+    line-height: 50px;
+}
+    .noWRAP{
+     flex-wrap: nowrap; /*Valor padrão do nowrap, faz com que não quebre linha.*/
+}
+    .wrap{
+    flex-wrap: wrap; /*Valor que adiciona WRAP.*/
+    
+    }
+    .wrapREVERSE{
+    flex-wrap:wrap-reverse;
+    }
+    #laranja{
+    background-color:orange;
+    }
+    
+    #roxo{
+    background-color:purple;
+}
+    #azul{
+    background-color:blue;
+}
+    #vermelho{
+    background-color:red;
+    }
+</style>
+
+</head>
+
+<body>
+<h1>No wrap </h1>
+<div class="flex-container noWRAP"> 
+<div class="item" id="laranja">1</div>
+<div class="item" id="roxo">2</div>
+<div class="item" id="azul">3</div>
+<div class="item" id="azul">4</div>
+
+
+<!--Se adicionar mais um item no container, irá vazar. Como o container tem altura o suficiente para quebrar linhas, o Flex Wrap entra nessa causa para manter a proporcionalidade dos itens entre si! -->
+</div>
+
+<h1>COM WRAP</h1>
+<div class="flex-container wrap">    
+<div class="item" id="laranja">1</div>
+<div class="item" id="roxo">2</div>
+<div class="item" id="azul">3</div>
+<div class="item" id="azul">4</div>
+<!--Como pode ver, o Wrap quebra a linha, respeitando o limite de largura do container.-->
+
+
+
+
+
+</div>
+
+<h1>COM WRAP REVERSE</h1>
+<div class="flex-container wrapREVERSE">    
+<div class="item" id="laranja">1</div>
+<div class="item" id="roxo">2</div>
+<div class="item" id="azul">3</div>
+<div class="item" id="azul">4</div>
+<!-- Seguindo o mesmo principio do Wrap, o reverse muda a direção da quebra de linha -->
+
+
+
+</div>
+
+</body>
