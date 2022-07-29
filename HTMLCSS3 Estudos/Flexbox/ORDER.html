@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FLEX ORDER</title>
+<style type="text/css">
+.flex-container{
+    display:flex;
+    margin: 5px;
+    border: 3px double black;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.flex-item{
+    background-color: blue;
+    color: white; 
+    text-align: center;
+    font-size:24px;
+    flex: 1;
+    margin: 2px; 
+}
+.order{
+    order:0; /*Nada será feito com o valor 0*/
+}
+.order1{
+    order:1; /*O elemento que receber este atributo será representado na primeira posição do eixo da lista.*/
+}
+.order2{
+    order:2;
+}
+.order3{
+    order:3;
+}
+.order4{
+    order:4;
+}
+.order5{
+    order:5;
+}
+</style>
+</head>
+<body>
+<h1>ORDER com valor 0</h1>
+<div class="flex-container">
+    <div class="flex-item order"> 5</div>
+    <div class="flex-item"> 4</div>
+    <div class="flex-item"> 3</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">1</div>
+</div>
+
+<h1>ORDER com valor 1</h1>
+<div class="flex-container">
+    <div class="flex-item order"> 5</div>
+    <div class="flex-item"> 4</div>
+    <div class="flex-item order1"> 3</div> <!-- Como visto o order1 altera a posição do 3 para a primeira posição do eixo --> 
+    <div class="flex-item">2</div>
+    <div class="flex-item">1</div> 
+</div>
+
+<h1>ORDER com valor 5,4,3,2,1</h1>
+<div class="flex-container">
+    <div class="flex-item order"> 5</div>
+    <div class="flex-item order4"> 4</div>
+    <div class="flex-item order2"> 3</div> <!-- Como visto, todos os itens estão posicionados conforme seu valor de "order". --> 
+    <div class="flex-item order3">2</div>
+    <div class="flex-item order5">1</div> 
+</div>
+
+</body>
+</html>

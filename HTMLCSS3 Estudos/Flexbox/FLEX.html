@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+.flex-container{
+    max-width:200px;
+    display:flex;
+    margin:5px;
+    border:5px dotted purple;
+}
+.flex-item{
+    background-color: red;
+    color: purple;
+    margin: 2px;
+
+    font-size:24px;
+}
+.flex-flex{
+    flex:1; /*Esta propriedade é um atalho para as propriedades grow, shrink e basis. Neste sentido é um conjunto de propriedades em que grow recebe 1, o shrink recebe 1 e o basis recebe 0 por padrão.*/
+}
+.flex-flex2{
+    flex:2 ;/*As propriedades recebem o valor de 2, exceto basis.*/
+}
+.largura{
+width: 200px; /*O basis não permite o funcionamento desta propriedade.*/
+min-width: 250px; /*Porém se utilizar a propriedade "min" que define o valor minímo, conseguirá passar pelo basis.*/
+}
+</style>
+</head>
+<body>
+<h1>FLEX COM VALOR 1</h1>
+<div class="flex-container">
+<div class="flex-item flex-flex">AAAaaaaaaaaaaaaaaa</div> <!-- Como poder ver, os itens ganham as propriedades shrink, basis e grow ao utilizar apenas o "flex:1", isso significa que se o conteúdo do item for muito grande, o item não vai quebrar de linha e nem reduzir demais o seu tamanho. -->
+<div class="flex-item flex-flex">BBB</div>
+<div class="flex-item flex-flex">CC</div>
+<div class="flex-item flex-flex">D</div>
+<div class="flex-item flex-flex">E</div>
+</div>
+
+<h1>FLEX COM VALOR 1 E FLEX COM VALOR 2</h1>
+<div class="flex-container">
+<div class="flex-item flex-flex2">AAAaaaaaaaaaaaaaaa</div> <!-- -->
+<div class="flex-item flex-flex2">BBB</div>
+<div class="flex-item flex-flex2">CC</div>
+<div class="flex-item flex-flex">D</div>
+<div class="flex-item flex-flex">E</div>
+</div>
+
+<h1>FLEX COM VALOR 1,FLEX COM VALOR 2 E MIN-WIDTH 250PX</h1>
+<div class="flex-container">
+<div class="flex-item flex-flex2 largura">AAAaaaaaaaaaaaaaaa</div> <!-- -->
+<div class="flex-item flex-flex2 largura">BBB</div>
+<div class="flex-item flex-flex2">CC</div>
+<div class="flex-item flex-flex">D</div>
+<div class="flex-item flex-flex">E</div>
+</div>
+</body>
+</html>

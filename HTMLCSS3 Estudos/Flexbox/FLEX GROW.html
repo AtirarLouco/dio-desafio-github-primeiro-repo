@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FLEX GROW</title>
+<style type="text/css">
+.flex-container2{
+    display: flex;
+    border: 4px solid green;
+    max-width: 700px;}
+    
+.flex-container{
+    display: flex;
+    border: 4px solid green;
+    max-width: 300px;
+    
+}
+.flex-item{
+    background-color:pink;
+    color: yellow;
+    margin: 5px;
+    padding: 10px;
+    text-align:center;
+    
+}
+.grownando-0{
+    flex-grow: 0; /*Valor padrão, nada ocorre*/
+}
+.grownando-2{
+    flex-grow: 2;
+}
+
+.grownando-7{
+    flex-grow: 7;
+}
+.grownando-3{
+    flex-grow: 3;
+}
+.grownando-1{
+    flex-grow: 1;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Grownando 0</h1>
+<div class="flex-container">
+
+<div class="flex-item grownando-0">0</div>
+<div class="flex-item grownando-0">0</div>
+<div class="flex-item grownando-0">0</div>
+<div class="flex-item grownando-0">0</div>
+<div class="flex-item grownando-0">0</div>
+
+
+</div>
+<h1>Grownando 2</h1>
+<div class="flex-container">
+
+<div class="flex-item grownando-2">2</div>
+<div class="flex-item grownando-2">2</div>
+<div class="flex-item grownando-2">2</div>
+<div class="flex-item grownando-2">2</div>
+<div class="flex-item grownando-2">2</div>
+</div>
+
+<h1>Grownando 7</h1>
+<div class="flex-container2">
+
+<div class="flex-item grownando-7">7</div>
+<div class="flex-item grownando-7">7</div>
+<div class="flex-item grownando-7">7</div>
+<div class="flex-item grownando-7">7</div>
+<div class="flex-item grownando-7">7</div>
+</div>
+
+<h1>Grownando 7, 0 , 2, 1, 3</h1>
+<div class="flex-container2">
+
+<div class="flex-item grownando-7">7</div>
+<div class="flex-item grownando-0">0</div>
+<div class="flex-item grownando-2">2</div>
+<div class="flex-item grownando-1">1</div>
+<div class="flex-item grownando-3">3</div>
+<!--É possível misturar grows de diferentes tamanhos para elementos diferentes -->
+</div>
+
+
+</body>
+
+</html>
+

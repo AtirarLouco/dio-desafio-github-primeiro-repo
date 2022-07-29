@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ALIGN CONTENT</title>
+<style type="text/css">
+.flex-container{
+    border: 3px solid blue;
+    height: 400px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.flex-item{
+    background-color: #50423F;
+    padding: 0 5px;
+    flex: 1;
+    text-align: center;
+    color: grey;
+    margin: 5px;
+
+}
+.stretch{
+    align-content: stretch; /*O maior item define o tamanho define o tamanho dos outros itens*/
+}
+.center{
+    align-content:center; /*Alinha para o centro*/
+}
+.flex-start{
+    align-content:flex-start;/*Alinha para o ínicio*/ 
+}
+.flex-end{
+    align-content:flex-end;/*Alinha para o fim*/
+}
+.flex-space-between{
+    align-content:space-between; /*Alinha com espaçamento por igual entre elementos*/
+}
+.flex-around{
+    align-content:space-around; /*Alinha com espaçamento no inicio e no fim por igual entre elementos*/
+}
+</style>
+</head>
+<body>
+<h1>ALIGN CONTENT com stretch</h1>
+<section> 
+
+<div class="flex-container stretch">
+<div class="flex-item">Desodorante</div>
+<div class="flex-item">Caneta</div>
+<div class="flex-item">Chaves</div>
+<div class="flex-item">Canivete amolado</div>
+
+
+
+</div>
+    
+<h1>ALIGN-ITEMS com center</h1>
+<div class="flex-container center">
+<div class="flex-item">Desodorante</div>
+<div class="flex-item">Caneta</div>
+<div class="flex-item">Chaves</div>
+<div class="flex-item">Canivete amolado</div>
+
+
+
+</div>
+<h1>ALIGN-ITEMS com start</h1>
+<div class="flex-container flex-start">
+<div class="flex-item">Desodorante</div>
+<div class="flex-item">Caneta</div>
+<div class="flex-item">Chaves</div>
+<div class="flex-item">Canivete amolado</div>
+
+
+
+</div>
+
+<h1>ALIGN-ITEMS com end</h1>
+<div class="flex-container flex-end">
+<div class="flex-item">Desodorante</div>
+<div class="flex-item">Caneta</div>
+<div class="flex-item">Chaves</div>
+<div class="flex-item">Canivete amolado</div>
+
+
+
+</div>
+<h1>ALIGN-ITEMS com space-between</h1>
+<div class="flex-container flex-space-between">
+<div class="flex-item">Desodorante</div>
+<div class="flex-item">Caneta</div>
+<div class="flex-item">Chaves</div>
+<div class="flex-item">Canivete amolado</div>
+
+
+
+
+</div>
+
+<h1>ALIGN-ITEMS com space-around</h1>
+<div class="flex-container flex-around">
+<div class="flex-item">Desodorante</div>
+<div class="flex-item">Caneta</div>
+<div class="flex-item">Chaves</div>
+<div class="flex-item">Canivete amolado</div>
+
+
+
+
+</div>
+
+</section>
+</body>
+</html

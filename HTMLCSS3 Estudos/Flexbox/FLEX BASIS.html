@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FLEX BASIS</title>
+<style type="text/css">
+.flex-container{
+    max-width: 300px;
+    border: 2px dotted black;
+    display:flex;
+}
+.flex-item{
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+.basisauto{ 
+    flex-basis: auto;/*Basis pré-define o tamanho inicial do item para distribuição de espaço, com o auto ele põe o valor automaticamente conforme o container.*/
+}
+.fg-1{
+    flex-grow:1;
+}
+.basis0{
+    flex-basis:0; /*Com basis em 0, o flex-grow terá o trabalho de definir o tamanho do mesmo.*/
+}
+</style>
+
+</head>
+<body>
+<h1>FLEX BASIS COM FLEX GROW</h1>
+<div class="flex-container">
+<div class="flex-item basisauto fg-1">1</div>
+<div class="flex-item ">22</div>
+<div class="flex-item">123</div>
+<div class="flex-item">6</div>
+
+</div>
+
+<h1>FLEX BASIS 0 COM FLEX GROW</h1>
+<div class="flex-container">
+<div class="flex-item basis0 fg-1">1111111111111111</div>
+<div class="flex-item fg-1">22</div>
+<div class="flex-item fg-1">123</div>
+<div class="flex-item fg-1">6666</div>
+
+</div>
+
+</body>
+</html>

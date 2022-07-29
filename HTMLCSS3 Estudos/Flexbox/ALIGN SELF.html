@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ALIGN SELF</title>
+<style type="text/css">
+.flex-container{
+    display:flex;
+    max-width: 450px;
+    border: 2px solid red;
+    margin-bottom:10px;
+}
+
+.flex-item{
+    background-color:blue;
+    color: yellow;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+}
+.align-container{
+    align-items: center; 
+}
+
+
+.auto{
+    align-self: auto;
+}
+
+.center{
+    align-self: center;
+}
+
+.start{
+    align-self: flex-start;
+
+}
+
+.end{
+    align-self: flex-end;
+}
+.stretch{
+    align-self: stretch;
+}
+.baseline{
+    align-self: baseline;
+    
+}
+
+.column{
+    flex-direction:column;
+}
+</style>
+</head>
+
+<body>
+<h1>Align-self com valor auto</h1>
+<div class="flex-container">
+    <div class="flex-item auto">auto</div>
+    <div class="flex-item auto">carro</div>
+    <div class="flex-item auto">caderno de papel reciclável  de papel reciclável </div>
+    <div class="flex-item auto">no</div>    
+</div>
+
+<h1>Align-self com valor center</h1>
+<div class="flex-container">
+    <div class="flex-item center">auto</div>
+    <div class="flex-item center">carro</div>
+    <div class="flex-item center">caderno de papel reciclável  de papel reciclável </div>
+    <div class="flex-item center">no</div>    
+</div>
+
+<h1>Align-self com valor start</h1>
+<div class="flex-container">
+    <div class="flex-item start">auto</div>
+    <div class="flex-item start">carro</div>
+    <div class="flex-item start">caderno de papel reciclável  de papel reciclável </div>
+    <div class="flex-item start">no</div>    
+</div>
+
+<h1>Align-self com valor END</h1>
+<div class="flex-container">
+    <div class="flex-item end">auto</div>
+    <div class="flex-item end">carro</div>
+    <div class="flex-item end">caderno de papel reciclável </div>
+    <div class="flex-item end">no</div>     
+</div>
+
+<h1>Align-self com valor stretch</h1>
+<div class="flex-container">
+    <div class="flex-item stretch">auto</div>
+    <div class="flex-item stretch">carro</div>
+    <div class="flex-item stretch">caderno de papel reciclável  de papel reciclável </div>
+    <div class="flex-item stretch">no</div>     
+</div>
+
+<h1>Align-self com valor baseline</h1>
+<div class="flex-container">
+    <div class="flex-item baseline">auto</div>
+    <div class="flex-item baseline">carro</div>
+    <div class="flex-item baseline">caderno de papel reciclável  de papel reciclável </div>
+    <div class="flex-item baseline">no</div>     
+</div>
+
+<h1>Align-self com valor center, auto, start, end, stretch, baseline</h1>
+<div class="flex-container">
+    <div class="flex-item center">auto</div>
+    <div class="flex-item auto">carro</div>
+    <div class="flex-item start">caderno de papel reciclável  de papel reciclável </div>
+    <div class="flex-item end">no</div>   
+    
+    <div class="flex-item stretch">yes</div>
+    <div class="flex-item baseline">Maybe</div>            
+</div>
+
+<h1>Align-self com valor center, auto, start, end, stretch, baseline>EM COLUNA</h1>
+
+<div class="flex-container column">
+    <div class="flex-item center">auto</div>
+    <div class="flex-item auto">carro</div>
+    <div class="flex-item start">caderno de papel reciclável  de papel reciclável </div>
+    <div class="flex-item end">no</div>   
+    
+    <div class="flex-item stretch">yes</div>
+    <div class="flex-item baseline">Maybe</div>    
+</body>
+
+
+</html>

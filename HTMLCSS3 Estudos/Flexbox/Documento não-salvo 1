@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ALIGN SELF</title>
+<style type="text/css">
+.flex-container{
+    display:flex;
+    max-width: 350px;
+    border: 2px solid red;
+    margin-bottom:10px;
+    
+}
+
+.flex-item{
+    background-color:blue;
+    color: yellow;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+}
+}
+
+.auto{
+    align-self: auto;
+}
+
+.center{
+    align-self: center;
+}
+
+.start{
+    align-self: flex-start;
+
+}
+
+.end{
+    align-self: flex-end;
+}
+.stretch{
+    align-self: stretch;
+}
+.baseline{
+    align-self: baseline;
+}
+</style>
+</head>
+
+<body>
+<h1>Align-self com valor auto</h1>
+<div class="flex-container">
+    <div class="flex-item auto">auto</div>
+    <div class="flex-item auto">carro</div>
+    <div class="flex-item auto">CADERNo</div>
+    <div class="flex-item auto">CaNETA</div>    
+</div>
+</body>
+
+
+</html>
