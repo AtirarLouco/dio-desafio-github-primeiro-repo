@@ -1,0 +1,131 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: Ubuntu, Arial;
+    font-size:14px;
+    
+}
+p{
+    
+    text-align: center;
+}
+
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F3F3F3;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+}
+.Containergeral{
+    align-items: center;
+    display:flex;
+    border: 2px dotted grey;
+    max-width:900px;
+    max-height:629px;
+    flex-wrap: wrap;
+    
+} 
+
+.containergeral2{
+
+    width: 350px;
+    height: 440px;
+    flex-wrap: wrap;
+  
+     
+} 
+
+.containerlogin{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+   border: 2px solid #D3D3D3;
+    
+}
+
+.containercadastretroque{
+    background-color: white;
+    width: 350px;
+    height: 60px;
+   border: 2px solid #D3D3D3;
+    text-align: center;
+    padding: 10px;
+    color: grey;
+    margin-bottom: 10px;
+}
+.containercontinue{
+    background-color: #2D8CF0;
+    width: 230px;
+    height: 33px;
+    border-radius: 4px;
+    margin:10px 0 0 0;
+    align-items: center;
+    text-align: center;
+   padding: 5px;
+}
+.containerAPP{
+    width: 350px;
+    height: 103px;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.apps{
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.appsapple{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    background-image: url('imagens/apple-button.png');    
+}
+.appplaystore{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    background-image: url('imagens/googleplay-button.png');    
+}
+#instalogo{
+         margin: 15px 10px 5px 10px;
+         width: 149px;
+         height: 42px;
+}
+
+#perfil{
+    
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+
+    
+}
+#botaocontinue{
+    color: white;
+   font-weight: bold;
+ 
+}
+
+#botaoremover{
+    color: #2D8CF0;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
