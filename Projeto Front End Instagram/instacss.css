@@ -24,14 +24,13 @@ body{
     display:flex;
     justify-content: center;
 }
+
 .Containergeral{
     align-items: center;
     display:flex;
-    border: 2px dotted grey;
     max-width:900px;
     max-height:629px;
-    flex-wrap: wrap;
-    
+    flex-wrap:wrap;
 } 
 
 .containergeral2{
@@ -39,7 +38,7 @@ body{
     width: 350px;
     height: 440px;
     flex-wrap: wrap;
-  
+   
      
 } 
 
